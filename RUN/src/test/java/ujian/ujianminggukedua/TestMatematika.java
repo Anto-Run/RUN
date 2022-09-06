@@ -51,7 +51,7 @@ public class TestMatematika {
 		doInputDua = rand.nextDouble(intIndexAwal, intIndexAkhir);
 		System.out.println("Nilai x: "+doInputSatu);
 		System.out.println("Nilai x: "+doInputDua);
-		assertEquals(mtk.jumlahNilaiActual(doInputSatu, doInputDua), mtk.jumlahNilaiExcept(doInputSatu, doInputDua));
+		assertEquals(mtk.jumlahNilaiActual(doInputSatu, doInputDua), mtk.jumlahNilaiExpect(doInputSatu, doInputDua));
 		System.out.println("===========================");
 		
 	}
@@ -67,7 +67,7 @@ public class TestMatematika {
 		doInputDua = rand.nextInt(intIndexAwal, intIndexAkhir);
 		System.out.println("Nilai x: "+doInputSatu);
 		System.out.println("Nilai x: "+doInputDua);
-		assertEquals(mtk.kurangNilaiActual(doInputSatu, doInputDua), mtk.kurangNilaiExcept(doInputSatu, doInputDua));
+		assertEquals(mtk.kurangNilaiActual(doInputSatu, doInputDua), mtk.kurangNilaiExpect(doInputSatu, doInputDua));
 		System.out.println("===========================");
 	}
 	
@@ -83,7 +83,7 @@ public class TestMatematika {
 		doInputDua = rand.nextDouble(intIndexAwal, intIndexAkhir);
 		System.out.println("Nilai x: "+doInputSatu);
 		System.out.println("Nilai x: "+doInputDua);
-		assertEquals(mtk.bagiNilaiActual(doInputSatu, doInputDua), mtk.bagiNilaiExcept(doInputSatu, doInputDua));
+		assertEquals(mtk.bagiNilaiActual(doInputSatu, doInputDua), mtk.bagiNilaiExpect(doInputSatu, doInputDua));
 		System.out.println("===========================");
 		
 	}
@@ -99,7 +99,7 @@ public class TestMatematika {
 		doInputDua = rand.nextDouble(intIndexAwal, intIndexAkhir);
 		System.out.println("Nilai x: "+doInputSatu);
 		System.out.println("Nilai x: "+doInputDua);
-		assertEquals(mtk.modulusNilaiActual(doInputSatu, doInputDua), mtk.modulusNilaiExcept(doInputSatu, doInputDua));
+		assertEquals(mtk.modulusNilaiActual(doInputSatu, doInputDua), mtk.modulusNilaiExpect(doInputSatu, doInputDua));
 		System.out.println("===========================");
 		
 	}

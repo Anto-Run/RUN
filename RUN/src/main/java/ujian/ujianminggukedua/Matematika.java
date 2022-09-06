@@ -12,9 +12,9 @@ public class Matematika {
 		return doHasil;
 	}
 	
-	public double jumlahNilaiExcept(double doNilaiX, double doNilaiY) {
+	public double jumlahNilaiExpect(double doNilaiX, double doNilaiY) {
 		doHasil = (doNilaiX+doNilaiY);
-		System.out.println(doHasil+"--> Hasil Expection");
+		System.out.println(doHasil+"--> Hasil Expectation");
 		return doHasil;
 	}
 	
@@ -24,9 +24,9 @@ public class Matematika {
 		return doHasil;
 	}
 	
-	public double kurangNilaiExcept(double doNilaiX, double doNilaiY) {
+	public double kurangNilaiExpect(double doNilaiX, double doNilaiY) {
 		doHasil = (doNilaiX - doNilaiY);
-		System.out.println(doHasil+"--> Hasil Expection");
+		System.out.println(doHasil+"--> Hasil Expectation");
 		return doHasil;
 	}
 	
@@ -35,9 +35,9 @@ public class Matematika {
 		System.out.println(doHasil+"--> Hasil Actual");
 		return doHasil;
 	}
-	public double bagiNilaiExcept(double doNilaiX, double doNilaiY) {
+	public double bagiNilaiExpect(double doNilaiX, double doNilaiY) {
 		doHasil = (doNilaiX / doNilaiY);
-		System.out.println(doHasil+"--> Hasil Expection");
+		System.out.println(doHasil+"--> Hasil Expectation");
 		return doHasil;
 	}
 	
@@ -46,9 +46,9 @@ public class Matematika {
 		System.out.println(doHasil+"--> Hasil Actual");
 		return doHasil;
 	}
-	public double modulusNilaiExcept(double doNilaiX, double doNilaiY) {
+	public double modulusNilaiExpect(double doNilaiX, double doNilaiY) {
 		doHasil = (doNilaiX % doNilaiY);
-		System.out.println(doHasil+"--> Hasil Expection");
+		System.out.println(doHasil+"--> Hasil Expectation");
 		return doHasil;
 	}
 

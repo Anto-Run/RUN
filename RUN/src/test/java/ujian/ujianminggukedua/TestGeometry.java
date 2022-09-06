@@ -51,7 +51,7 @@ public class TestGeometry {
 			intIndexAkhir = 40;
 			doInputSatu = rand.nextDouble(intIndexAwal, intIndexAkhir);
 			System.out.println("Sisi Persegi: "+doInputSatu);
-			assertEquals(geo.luasPersegiActual(doInputSatu), geo.luasPersegiExcept(doInputSatu), "Kedua Data Tidak Cocok");
+			assertEquals(geo.luasPersegiActual(doInputSatu), geo.luasPersegiExpect(doInputSatu), "Kedua Data Tidak Cocok");
 			System.out.println("===========================");
 		}
 		
@@ -66,7 +66,7 @@ public class TestGeometry {
 			doInputDua = rand.nextDouble(intIndexAwal, intIndexAkhir);
 			System.out.println("Alas Segitiga: "+doInputSatu);
 			System.out.println("Tinggi Segitiga: "+doInputDua);
-			assertEquals(geo.luasSegitigaActual(doInputSatu, doInputDua), geo.luasSegitigaExcept(doInputSatu, doInputDua), "Kedua Data Tidak Cocok");
+			assertEquals(geo.luasSegitigaActual(doInputSatu, doInputDua), geo.luasSegitigaExpect(doInputSatu, doInputDua), "Kedua Data Tidak Cocok");
 			System.out.println("===========================");
 		}
 		
@@ -83,7 +83,7 @@ public class TestGeometry {
 			System.out.println("Sisi A Trapesium: "+doInputSatu);
 			System.out.println("Sisi B Trapesium: "+doInputDua);
 			System.out.println("Tinggi Trapesium: "+doInputTiga);
-			assertEquals(geo.luasTrapesiumActual(doInputSatu, doInputDua, doInputTiga), geo.luasTrapesiumExcept(doInputSatu, doInputDua, doInputTiga), "Kedua Data Tidak Cocok");
+			assertEquals(geo.luasTrapesiumActual(doInputSatu, doInputDua, doInputTiga), geo.luasTrapesiumExpect(doInputSatu, doInputDua, doInputTiga), "Kedua Data Tidak Cocok");
 			System.out.println("===========================");
 		}
 		@AfterClass

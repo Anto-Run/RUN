@@ -24,27 +24,27 @@ public class ParsingString {
 		return isActual;
 		
 	}
-	public boolean parseStringToIntExcept(String strX) {
-		boolean isExcept = true;
+	public boolean parseStringToIntExpect(String strX) {
+		boolean isExpect = true;
 		try {
 		Integer intY = Integer.parseInt(strX);
 		System.out.println("====================================");
-		System.out.println("            Hasil Exception");
-		System.out.println("Status Parse String : "+isExcept);
+		System.out.println("            Hasil Expectation");
+		System.out.println("Status Parse String : "+isExpect);
 		System.out.println("Hasil Parse String ke int : "+intY);
 		System.out.println("====================================");
 		}
 		catch (Exception e){
-			isExcept = false;
+			isExpect = false;
 			System.out.println("====================================");
-			System.out.println("        Hasil Exception : "+isExcept);
+			System.out.println("        Hasil Expectation : "+isExpect);
 			System.out.println("====================================");
 			System.out.println("String tidak bisa dikonvert");
 			System.out.println("Problem string tidak bisa konvert : "+e);
 			System.out.println("====================================");
 		}
 		
-		return isExcept;
+		return isExpect;
 	}
 	
 	public boolean parseStringToDoubleActual(String strX) {
@@ -69,26 +69,26 @@ public class ParsingString {
 		return isActual;
 		
 	}
-	public boolean parseStringToDoubleExcept(String strX) {
-		boolean isExcept = true;
+	public boolean parseStringToDoubleExpect(String strX) {
+		boolean isExpect = true;
 		try {
 			double doY = Double.parseDouble(strX);
 			System.out.println("====================================");
-			System.out.println("            Hasil Exception");
-			System.out.println("Status Parse String : "+isExcept);
+			System.out.println("            Hasil Expectation");
+			System.out.println("Status Parse String : "+isExpect);
 			System.out.println("Hasil Parse String ke double : "+doY);
 			System.out.println("====================================");
 		}
 		catch (Exception e){
-			isExcept = false;
+			isExpect = false;
 			System.out.println("====================================");
-			System.out.println("        Hasil Exception : "+isExcept);
+			System.out.println("        Hasil Expectation : "+isExpect);
 			System.out.println("====================================");
 			System.out.println("String tidak bisa dikonvert");
 			System.out.println("Problem string tidak bisa konvert : "+e);
 			System.out.println("====================================");
 		}
-		return isExcept;
+		return isExpect;
 	}
 	public boolean parseStringToFloatActual(String strX) {
 		boolean isActual = true;
@@ -112,26 +112,26 @@ public class ParsingString {
 		return isActual;
 		
 	}
-	public boolean parseStringToFloatExcept(String strX) {
-		boolean isExcept = true;
+	public boolean parseStringToFloatExpect(String strX) {
+		boolean isExpect = true;
 		try {
 			float floatY = Float.parseFloat(strX);
 
 			System.out.println("====================================");
-			System.out.println("            Hasil Exception");
-			System.out.println("Status Parse String : "+isExcept);
+			System.out.println("            Hasil Expectation");
+			System.out.println("Status Parse String : "+isExpect);
 			System.out.println("Hasil Parse String ke float : "+floatY);
 			System.out.println("====================================");
 		}
 		catch (Exception e){
-			isExcept = false;
+			isExpect = false;
 			System.out.println("====================================");
-			System.out.println("        Hasil Exception : "+isExcept);
+			System.out.println("        Hasil Expectation : "+isExpect);
 			System.out.println("====================================");
 			System.out.println("String tidak bisa dikonvert");
 			System.out.println("Problem string tidak bisa konvert : "+e);
 			System.out.println("====================================");
 		}
-		return isExcept;
+		return isExpect;
 	}
 }

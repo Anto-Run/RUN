@@ -11,7 +11,7 @@ public class Geometry {
 		return doHasil;
 	}
 	
-	public double luasPersegiExcept(double doSisi) {
+	public double luasPersegiExpect(double doSisi) {
 		doHasil = java.lang.Math.pow(doSisi, 2);
 		System.out.println(doHasil+"--> Hasil Except");
 		return doHasil;
@@ -24,7 +24,7 @@ public class Geometry {
 		return doHasil;				
 	}
 	
-	public double luasSegitigaExcept(double doAlas, double doTinggi) {
+	public double luasSegitigaExpect(double doAlas, double doTinggi) {
 		doHasil = (doAlas * doTinggi)/2;
 		System.out.println(doHasil+"--> Hasil Except");
 		return doHasil;
@@ -37,7 +37,7 @@ public class Geometry {
 		return doHasil;
 	}
 	
-	public double luasTrapesiumExcept(double doSisiA, double doSisiB, double doTinggi) {
+	public double luasTrapesiumExpect(double doSisiA, double doSisiB, double doTinggi) {
 		doHasil = ((doSisiA + doSisiB)*doTinggi)/2;;
 		System.out.println(doHasil+"--> Hasil Excpect");
 		return doHasil;

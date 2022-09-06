@@ -49,7 +49,7 @@ public class TestParsingString {
 	    intLengthString = 9;
 	    strInput = RandomStringUtils.random(intLengthString, useLetters, useNumbers);
 		System.out.println("String Input: "+strInput);
-	    assertEquals(ps.parseStringToIntActual(strInput),ps.parseStringToIntExcept(strInput));
+	    assertEquals(ps.parseStringToIntActual(strInput),ps.parseStringToIntExpect(strInput));
 		System.out.println("==================================");
 	}
 	@Test (priority=1)
@@ -61,7 +61,7 @@ public class TestParsingString {
 	    intLengthString = 15;
 	    strInput = RandomStringUtils.random(intLengthString, useLetters, useNumbers);
 		System.out.println("String Input: "+strInput);
-	    assertEquals(ps.parseStringToDoubleActual(strInput),ps.parseStringToDoubleExcept(strInput));
+	    assertEquals(ps.parseStringToDoubleActual(strInput),ps.parseStringToDoubleExpect(strInput));
 		System.out.println("==================================");
 	}
 
@@ -74,7 +74,7 @@ public class TestParsingString {
 	    intLengthString = 6;
 	    strInput = RandomStringUtils.random(intLengthString, useLetters, useNumbers);   
 	    System.out.println("String Input: "+strInput);
-	    assertEquals(ps.parseStringToFloatActual(strInput),ps.parseStringToFloatExcept(strInput));
+	    assertEquals(ps.parseStringToFloatActual(strInput),ps.parseStringToFloatExpect(strInput));
 		System.out.println("==================================");
 	}
 	@AfterClass
