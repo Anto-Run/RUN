@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class TestGeometry {
+public class TestGeometryPriorityKebalik {
 	
 		Geometry geo;
 		Random rand;
@@ -26,7 +26,7 @@ public class TestGeometry {
 		public void befClass()
 		{
 			
-			System.out.println("=============================   Before Class!!  ============================");
+			System.out.println("=============================   Before Class!!  =============================================");
 		}
 		
 		@BeforeTest
@@ -35,16 +35,16 @@ public class TestGeometry {
 			rand = new Random();
 			System.out.println("========================= Test Dimulai !! ================================");	
 			System.out.println("==========================  Priority !! ==================================");
-			System.out.println("0: Luas Persegi");
+			System.out.println("0: Luas Trapesium");
 			System.out.println("1: Luas Segitiga");
-			System.out.println("2: Luas Trapesium");
+			System.out.println("2: Luas Persegi");
 			System.out.println("===========================================================================");
 		}
 		@BeforeMethod
 		public void befMethod(){
-			System.out.println("=============================   Before Method!!  ============================");
+		System.out.println("=============================   Before Method!!  =============================================");
 		}
-		@Test (priority=0)
+		@Test(priority=2)
 		public void testLuasPersegi() {
 			System.out.println("============================ Test Luas Persegi ==============================");
 			System.out.println("=============================   Mulai!!  ====================================");
@@ -71,7 +71,7 @@ public class TestGeometry {
 			System.out.println("=============================   Selesai!!  ===================================");
 		}
 		
-		@Test (priority=2)
+		@Test (priority=0)
 		public void testLuasTrapesium() {
 			System.out.println("============================ Test Luas Trapesium ============================");
 			System.out.println("=============================   Mulai!!  ====================================");
@@ -101,6 +101,7 @@ public class TestGeometry {
 		@AfterTest
 		public void aftTest()
 		{
-			System.out.println("========================= Test Selesai !! ===================================");}
+			System.out.println("========================= Test Selesai !! ===================================");
+		}
 
 }

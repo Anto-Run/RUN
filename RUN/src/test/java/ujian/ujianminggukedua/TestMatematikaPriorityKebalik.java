@@ -1,23 +1,18 @@
 package ujian.ujianminggukedua;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
-import org.testng.AssertJUnit;
-import org.testng.annotations.AfterClass;
+import static org.testng.Assert.assertEquals;
 
+import java.util.Random;
+
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-
-import java.util.Random;
-
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import static org.testng.Assert.assertEquals;
-public class TestMatematika {
+
+class TestMatematikaPriorityKebalik {
 	
 	Matematika mtk;
 	Random rand;
@@ -36,19 +31,18 @@ public class TestMatematika {
 		rand = new Random();
 		System.out.println("========================= Test Dimulai !! ================================");	
 		System.out.println("==========================  Priority !! ==================================");
-		System.out.println("0: Penjumlahan Nilai");
-		System.out.println("1: Pengurangan Nilai");
-		System.out.println("2: Pembagian Nilai");
-		System.out.println("3: Modulus Nilai");
+		System.out.println("0: Modulus Nilai");
+		System.out.println("1: Pembagian Nilai");
+		System.out.println("2: Pengurangan Nilai");
+		System.out.println("3: Penjumlahan Nilai");
 		System.out.println("===========================================================================");
 		
 	}
 	@BeforeMethod
 	public void befMethod(){
-		System.out.println("=============================   Before Method!!  ===========================");
+		System.out.println("=============================   Before Method!!  ============================");
 	}
-	
-	@Test(priority=0)
+	@Test(priority=3)
 	public void testJumlahNilai() {
 		System.out.println("========================== Test Penjumlahan Nilai ===========================");
 		System.out.println("=============================   Mulai!!  ====================================");
@@ -58,12 +52,12 @@ public class TestMatematika {
 		doInputDua = rand.nextDouble(intIndexAwal, intIndexAkhir);
 		System.out.println("Nilai x: "+doInputSatu);
 		System.out.println("Nilai x: "+doInputDua);
-		assertEquals(mtk.jumlahNilaiActual(doInputSatu, doInputDua), mtk.jumlahNilaiExpect(doInputSatu, doInputDua));
+		assertEquals(mtk.jumlahNilaiActual(doInputSatu, doInputDua), mtk.jumlahNilaiExpect(doInputSatu, doInputDua),"Kedua data tidak cocok");
 		System.out.println("=============================   Selesai!!  ====================================");
 		
 	}
 	
-	@Test(priority=1)
+	@Test(priority=2)
 	public void testKurangNilai() {
 		System.out.println("========================== Test Pengurangan Nilai ===========================");
 		System.out.println("=============================   Mulai!!  ====================================");
@@ -73,11 +67,10 @@ public class TestMatematika {
 		doInputDua = rand.nextInt(intIndexAwal, intIndexAkhir);
 		System.out.println("Nilai x: "+doInputSatu);
 		System.out.println("Nilai x: "+doInputDua);
-		assertEquals(mtk.kurangNilaiActual(doInputSatu, doInputDua), mtk.kurangNilaiExpect(doInputSatu, doInputDua));
+		assertEquals(mtk.kurangNilaiActual(doInputSatu, doInputDua), mtk.kurangNilaiExpect(doInputSatu, doInputDua),"Kedua data tidak cocok");
 		System.out.println("=============================   Selesai!!  ====================================");
 	}
-	
-	@Test (priority=2)
+	@Test(priority=1)
 	public void testBagiNilai() {
 		
 		System.out.println("========================== Test Pembagian Nilai ===========================");
@@ -88,12 +81,12 @@ public class TestMatematika {
 		doInputDua = rand.nextDouble(intIndexAwal, intIndexAkhir);
 		System.out.println("Nilai x: "+doInputSatu);
 		System.out.println("Nilai x: "+doInputDua);
-		AssertJUnit.assertEquals(mtk.bagiNilaiActual(doInputSatu, doInputDua), mtk.bagiNilaiExpect(doInputSatu, doInputDua));
+		assertEquals(mtk.bagiNilaiActual(doInputSatu, doInputDua), mtk.bagiNilaiExpect(doInputSatu, doInputDua),"Kedua data tidak cocok");
 		System.out.println("=============================   Selesai!!  ====================================");
 		
 	}
 	
-	@Test (priority=3)
+	@Test(priority=0)
 	public void testModulusNilai() {
 		System.out.println("========================== Test Modulus Nilai ===============================");
 		System.out.println("=============================   Mulai!!  ====================================");
@@ -103,7 +96,7 @@ public class TestMatematika {
 		doInputDua = rand.nextDouble(intIndexAwal, intIndexAkhir);
 		System.out.println("Nilai x: "+doInputSatu);
 		System.out.println("Nilai x: "+doInputDua);
-		assertEquals(mtk.modulusNilaiActual(doInputSatu, doInputDua), mtk.modulusNilaiExpect(doInputSatu, doInputDua));
+		assertEquals(mtk.modulusNilaiActual(doInputSatu, doInputDua), mtk.modulusNilaiExpect(doInputSatu, doInputDua),"Kedua data tidak cocok");
 		System.out.println("=============================   Selesai!!  ====================================");
 		
 	}
@@ -123,6 +116,7 @@ public class TestMatematika {
 	@AfterTest
 	public void aftTest()
 	{
-		System.out.println("========================= Test Selesai !! ===================================");}
+		System.out.println("========================= Test Selesai !! ===================================");
+	}
 
 }

@@ -1,77 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-06T08:59:15 WIB" name="Default suite" finished-at="2022-09-06T08:59:15 WIB" duration-ms="95">
+  <suite started-at="2022-09-06T13:52:53 WIB" name="Suite" finished-at="2022-09-06T13:52:53 WIB" duration-ms="144">
     <groups>
     </groups>
-    <test started-at="2022-09-06T08:59:15 WIB" name="Default test" finished-at="2022-09-06T08:59:15 WIB" duration-ms="95">
-      <class name="ujian.ujianminggukedua.TestMatematika">
-        <test-method is-config="true" signature="befTest()[pri:0, instance:ujian.ujianminggukedua.TestMatematika@20ccf40b]" started-at="2022-09-06T08:59:15 WIB" name="befTest" finished-at="2022-09-06T08:59:15 WIB" duration-ms="16" status="PASS">
+    <test started-at="2022-09-06T13:52:53 WIB" name="Test" finished-at="2022-09-06T13:52:53 WIB" duration-ms="144">
+      <class name="ujian.ujianminggukedua.TestParsingStringPriorityKebalik">
+        <test-method is-config="true" signature="befTest()[pri:0, instance:ujian.ujianminggukedua.TestParsingStringPriorityKebalik@611889f4]" started-at="2022-09-06T13:52:53 WIB" name="befTest" finished-at="2022-09-06T13:52:53 WIB" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- befTest -->
-        <test-method is-config="true" signature="befClass()[pri:0, instance:ujian.ujianminggukedua.TestMatematika@20ccf40b]" started-at="2022-09-06T08:59:15 WIB" name="befClass" finished-at="2022-09-06T08:59:15 WIB" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="befClass()[pri:0, instance:ujian.ujianminggukedua.TestParsingStringPriorityKebalik@611889f4]" started-at="2022-09-06T13:52:53 WIB" name="befClass" finished-at="2022-09-06T13:52:53 WIB" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- befClass -->
-        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujianminggukedua.TestMatematika@20ccf40b]" started-at="2022-09-06T08:59:15 WIB" name="befMethod" finished-at="2022-09-06T08:59:15 WIB" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujianminggukedua.TestParsingStringPriorityKebalik@611889f4]" started-at="2022-09-06T13:52:53 WIB" name="befMethod" finished-at="2022-09-06T13:52:53 WIB" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- befMethod -->
-        <test-method signature="testJumlahNilai()[pri:0, instance:ujian.ujianminggukedua.TestMatematika@20ccf40b]" started-at="2022-09-06T08:59:15 WIB" name="testJumlahNilai" finished-at="2022-09-06T08:59:15 WIB" duration-ms="9" status="PASS">
+        <test-method signature="testParsingStringToFloat()[pri:0, instance:ujian.ujianminggukedua.TestParsingStringPriorityKebalik@611889f4]" started-at="2022-09-06T13:52:53 WIB" name="testParsingStringToFloat" finished-at="2022-09-06T13:52:53 WIB" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testJumlahNilai -->
-        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujianminggukedua.TestMatematika@20ccf40b]" started-at="2022-09-06T08:59:15 WIB" name="aftMethod" finished-at="2022-09-06T08:59:15 WIB" duration-ms="1" status="PASS">
+        </test-method> <!-- testParsingStringToFloat -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujianminggukedua.TestParsingStringPriorityKebalik@611889f4]" started-at="2022-09-06T13:52:53 WIB" name="aftMethod" finished-at="2022-09-06T13:52:53 WIB" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftMethod -->
-        <test-method signature="testKurangNilai()[pri:1, instance:ujian.ujianminggukedua.TestMatematika@20ccf40b]" started-at="2022-09-06T08:59:15 WIB" name="testKurangNilai" finished-at="2022-09-06T08:59:15 WIB" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testKurangNilai -->
-        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujianminggukedua.TestMatematika@20ccf40b]" started-at="2022-09-06T08:59:15 WIB" name="befMethod" finished-at="2022-09-06T08:59:15 WIB" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujianminggukedua.TestParsingStringPriorityKebalik@611889f4]" started-at="2022-09-06T13:52:53 WIB" name="befMethod" finished-at="2022-09-06T13:52:53 WIB" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- befMethod -->
-        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujianminggukedua.TestMatematika@20ccf40b]" started-at="2022-09-06T08:59:15 WIB" name="aftMethod" finished-at="2022-09-06T08:59:15 WIB" duration-ms="0" status="PASS">
+        <test-method signature="testParsingStringtoDouble()[pri:1, instance:ujian.ujianminggukedua.TestParsingStringPriorityKebalik@611889f4]" started-at="2022-09-06T13:52:53 WIB" name="testParsingStringtoDouble" finished-at="2022-09-06T13:52:53 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParsingStringtoDouble -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujianminggukedua.TestParsingStringPriorityKebalik@611889f4]" started-at="2022-09-06T13:52:53 WIB" name="aftMethod" finished-at="2022-09-06T13:52:53 WIB" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftMethod -->
-        <test-method signature="testBagiNilai()[pri:2, instance:ujian.ujianminggukedua.TestMatematika@20ccf40b]" started-at="2022-09-06T08:59:15 WIB" name="testBagiNilai" finished-at="2022-09-06T08:59:15 WIB" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBagiNilai -->
-        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujianminggukedua.TestMatematika@20ccf40b]" started-at="2022-09-06T08:59:15 WIB" name="befMethod" finished-at="2022-09-06T08:59:15 WIB" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujianminggukedua.TestParsingStringPriorityKebalik@611889f4]" started-at="2022-09-06T13:52:53 WIB" name="befMethod" finished-at="2022-09-06T13:52:53 WIB" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- befMethod -->
-        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujianminggukedua.TestMatematika@20ccf40b]" started-at="2022-09-06T08:59:15 WIB" name="aftMethod" finished-at="2022-09-06T08:59:15 WIB" duration-ms="0" status="PASS">
+        <test-method signature="testParsingStringToInt()[pri:2, instance:ujian.ujianminggukedua.TestParsingStringPriorityKebalik@611889f4]" started-at="2022-09-06T13:52:53 WIB" name="testParsingStringToInt" finished-at="2022-09-06T13:52:53 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParsingStringToInt -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujianminggukedua.TestParsingStringPriorityKebalik@611889f4]" started-at="2022-09-06T13:52:53 WIB" name="aftMethod" finished-at="2022-09-06T13:52:53 WIB" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftMethod -->
-        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujianminggukedua.TestMatematika@20ccf40b]" started-at="2022-09-06T08:59:15 WIB" name="befMethod" finished-at="2022-09-06T08:59:15 WIB" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- befMethod -->
-        <test-method signature="testModulusNilai()[pri:3, instance:ujian.ujianminggukedua.TestMatematika@20ccf40b]" started-at="2022-09-06T08:59:15 WIB" name="testModulusNilai" finished-at="2022-09-06T08:59:15 WIB" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testModulusNilai -->
-        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujianminggukedua.TestMatematika@20ccf40b]" started-at="2022-09-06T08:59:15 WIB" name="aftMethod" finished-at="2022-09-06T08:59:15 WIB" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftMethod -->
-        <test-method is-config="true" signature="aftClass()[pri:0, instance:ujian.ujianminggukedua.TestMatematika@20ccf40b]" started-at="2022-09-06T08:59:15 WIB" name="aftClass" finished-at="2022-09-06T08:59:15 WIB" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="aftClass()[pri:0, instance:ujian.ujianminggukedua.TestParsingStringPriorityKebalik@611889f4]" started-at="2022-09-06T13:52:53 WIB" name="aftClass" finished-at="2022-09-06T13:52:53 WIB" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftClass -->
-        <test-method is-config="true" signature="aftTest()[pri:0, instance:ujian.ujianminggukedua.TestMatematika@20ccf40b]" started-at="2022-09-06T08:59:15 WIB" name="aftTest" finished-at="2022-09-06T08:59:15 WIB" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="aftTest()[pri:0, instance:ujian.ujianminggukedua.TestParsingStringPriorityKebalik@611889f4]" started-at="2022-09-06T13:52:53 WIB" name="aftTest" finished-at="2022-09-06T13:52:53 WIB" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftTest -->
-      </class> <!-- ujian.ujianminggukedua.TestMatematika -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- ujian.ujianminggukedua.TestParsingStringPriorityKebalik -->
+      <class name="ujian.ujianminggukedua.TestMatematikaPriorityKebalik">
+        <test-method is-config="true" signature="befTest()[pri:0, instance:ujian.ujianminggukedua.TestMatematikaPriorityKebalik@66d3eec0]" started-at="2022-09-06T13:52:53 WIB" name="befTest" finished-at="2022-09-06T13:52:53 WIB" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befTest -->
+        <test-method is-config="true" signature="befClass()[pri:0, instance:ujian.ujianminggukedua.TestMatematikaPriorityKebalik@66d3eec0]" started-at="2022-09-06T13:52:53 WIB" name="befClass" finished-at="2022-09-06T13:52:53 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befClass -->
+        <test-method signature="testModulusNilai()[pri:0, instance:ujian.ujianminggukedua.TestMatematikaPriorityKebalik@66d3eec0]" started-at="2022-09-06T13:52:53 WIB" name="testModulusNilai" finished-at="2022-09-06T13:52:53 WIB" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testModulusNilai -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujianminggukedua.TestMatematikaPriorityKebalik@66d3eec0]" started-at="2022-09-06T13:52:53 WIB" name="befMethod" finished-at="2022-09-06T13:52:53 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befMethod -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujianminggukedua.TestMatematikaPriorityKebalik@66d3eec0]" started-at="2022-09-06T13:52:53 WIB" name="aftMethod" finished-at="2022-09-06T13:52:53 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujianminggukedua.TestMatematikaPriorityKebalik@66d3eec0]" started-at="2022-09-06T13:52:53 WIB" name="befMethod" finished-at="2022-09-06T13:52:53 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befMethod -->
+        <test-method signature="testBagiNilai()[pri:1, instance:ujian.ujianminggukedua.TestMatematikaPriorityKebalik@66d3eec0]" started-at="2022-09-06T13:52:53 WIB" name="testBagiNilai" finished-at="2022-09-06T13:52:53 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBagiNilai -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujianminggukedua.TestMatematikaPriorityKebalik@66d3eec0]" started-at="2022-09-06T13:52:53 WIB" name="aftMethod" finished-at="2022-09-06T13:52:53 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+        <test-method signature="testKurangNilai()[pri:2, instance:ujian.ujianminggukedua.TestMatematikaPriorityKebalik@66d3eec0]" started-at="2022-09-06T13:52:53 WIB" name="testKurangNilai" finished-at="2022-09-06T13:52:53 WIB" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testKurangNilai -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujianminggukedua.TestMatematikaPriorityKebalik@66d3eec0]" started-at="2022-09-06T13:52:53 WIB" name="befMethod" finished-at="2022-09-06T13:52:53 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befMethod -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujianminggukedua.TestMatematikaPriorityKebalik@66d3eec0]" started-at="2022-09-06T13:52:53 WIB" name="aftMethod" finished-at="2022-09-06T13:52:53 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+        <test-method signature="testJumlahNilai()[pri:3, instance:ujian.ujianminggukedua.TestMatematikaPriorityKebalik@66d3eec0]" started-at="2022-09-06T13:52:53 WIB" name="testJumlahNilai" finished-at="2022-09-06T13:52:53 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testJumlahNilai -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujianminggukedua.TestMatematikaPriorityKebalik@66d3eec0]" started-at="2022-09-06T13:52:53 WIB" name="befMethod" finished-at="2022-09-06T13:52:53 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befMethod -->
+        <test-method is-config="true" signature="aftClass()[pri:0, instance:ujian.ujianminggukedua.TestMatematikaPriorityKebalik@66d3eec0]" started-at="2022-09-06T13:52:53 WIB" name="aftClass" finished-at="2022-09-06T13:52:53 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftClass -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujianminggukedua.TestMatematikaPriorityKebalik@66d3eec0]" started-at="2022-09-06T13:52:53 WIB" name="aftMethod" finished-at="2022-09-06T13:52:53 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+        <test-method is-config="true" signature="aftTest()[pri:0, instance:ujian.ujianminggukedua.TestMatematikaPriorityKebalik@66d3eec0]" started-at="2022-09-06T13:52:53 WIB" name="aftTest" finished-at="2022-09-06T13:52:53 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftTest -->
+      </class> <!-- ujian.ujianminggukedua.TestMatematikaPriorityKebalik -->
+      <class name="ujian.ujianminggukedua.TestGeometry">
+        <test-method is-config="true" signature="befTest()[pri:0, instance:ujian.ujianminggukedua.TestGeometry@1e04fa0a]" started-at="2022-09-06T13:52:53 WIB" name="befTest" finished-at="2022-09-06T13:52:53 WIB" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befTest -->
+        <test-method is-config="true" signature="befClass()[pri:0, instance:ujian.ujianminggukedua.TestGeometry@1e04fa0a]" started-at="2022-09-06T13:52:53 WIB" name="befClass" finished-at="2022-09-06T13:52:53 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befClass -->
+        <test-method signature="testLuasPersegi()[pri:0, instance:ujian.ujianminggukedua.TestGeometry@1e04fa0a]" started-at="2022-09-06T13:52:53 WIB" name="testLuasPersegi" finished-at="2022-09-06T13:52:53 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLuasPersegi -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujianminggukedua.TestGeometry@1e04fa0a]" started-at="2022-09-06T13:52:53 WIB" name="befMethod" finished-at="2022-09-06T13:52:53 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befMethod -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujianminggukedua.TestGeometry@1e04fa0a]" started-at="2022-09-06T13:52:53 WIB" name="aftMethod" finished-at="2022-09-06T13:52:53 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+        <test-method signature="testLuasSegitiga()[pri:1, instance:ujian.ujianminggukedua.TestGeometry@1e04fa0a]" started-at="2022-09-06T13:52:53 WIB" name="testLuasSegitiga" finished-at="2022-09-06T13:52:53 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLuasSegitiga -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujianminggukedua.TestGeometry@1e04fa0a]" started-at="2022-09-06T13:52:53 WIB" name="befMethod" finished-at="2022-09-06T13:52:53 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befMethod -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujianminggukedua.TestGeometry@1e04fa0a]" started-at="2022-09-06T13:52:53 WIB" name="aftMethod" finished-at="2022-09-06T13:52:53 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+        <test-method is-config="true" signature="befMethod()[pri:0, instance:ujian.ujianminggukedua.TestGeometry@1e04fa0a]" started-at="2022-09-06T13:52:53 WIB" name="befMethod" finished-at="2022-09-06T13:52:53 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befMethod -->
+        <test-method signature="testLuasTrapesium()[pri:2, instance:ujian.ujianminggukedua.TestGeometry@1e04fa0a]" started-at="2022-09-06T13:52:53 WIB" name="testLuasTrapesium" finished-at="2022-09-06T13:52:53 WIB" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLuasTrapesium -->
+        <test-method is-config="true" signature="aftMethod()[pri:0, instance:ujian.ujianminggukedua.TestGeometry@1e04fa0a]" started-at="2022-09-06T13:52:53 WIB" name="aftMethod" finished-at="2022-09-06T13:52:53 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftMethod -->
+        <test-method is-config="true" signature="aftClass()[pri:0, instance:ujian.ujianminggukedua.TestGeometry@1e04fa0a]" started-at="2022-09-06T13:52:53 WIB" name="aftClass" finished-at="2022-09-06T13:52:53 WIB" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftClass -->
+        <test-method is-config="true" signature="aftTest()[pri:0, instance:ujian.ujianminggukedua.TestGeometry@1e04fa0a]" started-at="2022-09-06T13:52:53 WIB" name="aftTest" finished-at="2022-09-06T13:52:53 WIB" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftTest -->
+      </class> <!-- ujian.ujianminggukedua.TestGeometry -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

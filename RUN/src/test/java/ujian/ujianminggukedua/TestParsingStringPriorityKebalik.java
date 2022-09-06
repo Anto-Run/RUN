@@ -1,12 +1,6 @@
 package ujian.ujianminggukedua;
 
-
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
 import static org.testng.Assert.assertEquals;
-
-import java.util.Random;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.testng.annotations.AfterClass;
@@ -17,7 +11,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class TestParsingString {
+public class TestParsingStringPriorityKebalik {
 	ParsingString ps;
 	int intLengthString =0;
     boolean useLetters = false;
@@ -27,7 +21,7 @@ public class TestParsingString {
 	@BeforeClass
 	public void befClass()
 	{
-		System.out.println("=============================   Before Class!!  ==========================");
+		System.out.println("=============================   Before Class!!  ============================");
 	}
 	
 	@BeforeTest
@@ -35,9 +29,9 @@ public class TestParsingString {
 		ps = new ParsingString();
 		System.out.println("========================= Test Dimulai !! ================================");	
 		System.out.println("==========================  Priority !! ==================================");
-		System.out.println("0: Parsing String to Int");
+		System.out.println("0: Parsing String to Float");
 		System.out.println("1: Parsing String to Double");
-		System.out.println("2: Parsing String to Float");
+		System.out.println("2: Parsing String to Int");
 		System.out.println("===========================================================================");
 		
 		
@@ -47,7 +41,7 @@ public class TestParsingString {
 		System.out.println("=============================   Before Method!!  ============================");
 	}
 	
-	@Test(priority = 0)
+	@Test(priority = 2)
 	public void testParsingStringToInt() {
 		System.out.println("=================== Test Parsing String to Int !! ========================");	
 		System.out.println("==========================  Mulai !! =====================================");
@@ -58,7 +52,7 @@ public class TestParsingString {
 	    assertEquals(ps.parseStringToIntActual(strInput),ps.parseStringToIntExpect(strInput), "Kedua data tidak cocok");
 		System.out.println("==========================  Selesai !! ====================================");
 	}
-	@Test (priority=1)
+	@Test(priority = 1)
 	public void testParsingStringtoDouble() {
 		System.out.println("=================== Test Parsing String to Double !! ====================");	
 		System.out.println("==========================  Mulai !! ====================================");
@@ -70,7 +64,7 @@ public class TestParsingString {
 	    System.out.println("==========================  Selesai !! ====================================");
 	}
 
-	@Test (priority=2)
+	@Test (priority=0)
 	public void testParsingStringToFloat() {
 		System.out.println("=================== Test Parsing String to Float !! ====================");	
 		System.out.println("==========================  Mulai !! ====================================");
@@ -97,6 +91,5 @@ public class TestParsingString {
 	public void aftTest()
 	{
 		System.out.println("========================= Test Selesai !! ===================================");
-
 	}
 }
