@@ -3,17 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ujian.ujianminggukedua.TestGeometryPriorityKebalik">
+      <class name="latihan.testng.restassured.SampelRestAssured">
         <methods>
-          <include name="aftTest"/>
+          <include name="testPost"/>
           <include name="befTest"/>
-          <include name="testLuasTrapesium"/>
-          <include name="aftMethod"/>
-          <include name="befClass"/>
-          <include name="aftClass"/>
-          <include name="befMethod"/>
+          <include name="testGet"/>
         </methods>
-      </class> <!-- ujian.ujianminggukedua.TestGeometryPriorityKebalik -->
+      </class> <!-- latihan.testng.restassured.SampelRestAssured -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
