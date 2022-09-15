@@ -4,6 +4,9 @@ package tugas.selenium.formy;
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 import org.testng.annotations.*;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import static org.testng.Assert.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -17,6 +20,7 @@ public class EnableDisabledElement {
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
+	WebDriverManager.firefoxdriver().setup();
     driver = new FirefoxDriver();
     baseUrl = "https://www.google.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -28,6 +32,7 @@ public class EnableDisabledElement {
     driver.findElement(By.id("input")).click();
     driver.findElement(By.id("input")).clear();
     driver.findElement(By.id("input")).sendKeys("Selamat siang...");
+    Thread.sleep(5000);
   }
 
   @AfterClass(alwaysRun = true)

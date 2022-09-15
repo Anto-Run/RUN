@@ -3,6 +3,9 @@ package tugas.selenium.formy;
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 import org.testng.annotations.*;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import static org.testng.Assert.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -16,6 +19,7 @@ public class Checkboxes {
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
+	WebDriverManager.firefoxdriver().setup();
     driver = new FirefoxDriver();
     baseUrl = "https://www.google.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -27,6 +31,7 @@ public class Checkboxes {
     driver.findElement(By.id("checkbox-1")).click();
     driver.findElement(By.id("checkbox-2")).click();
     driver.findElement(By.id("checkbox-3")).click();
+    Thread.sleep(5000);
   }
 
   @AfterClass(alwaysRun = true)

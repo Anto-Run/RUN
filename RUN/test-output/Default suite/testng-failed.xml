@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tugas.selenium.formy.AutoComplete">
+      <class name="latihan.selenium.pagefactoryobject.TestLogin">
         <methods>
+          <include name="pageObject"/>
+          <include name="closeBrowser"/>
+          <include name="testInvalidUsernameNull"/>
+          <include name="testInvalidUsernamePasswordNull"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="testAutoComplete"/>
+          <include name="testInvalidPasswordNull"/>
         </methods>
-      </class> <!-- tugas.selenium.formy.AutoComplete -->
+      </class> <!-- latihan.selenium.pagefactoryobject.TestLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

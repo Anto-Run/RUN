@@ -4,6 +4,9 @@ package tugas.selenium.formy;
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 import org.testng.annotations.*;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import static org.testng.Assert.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -17,6 +20,7 @@ public class Datepicker {
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
+	WebDriverManager.firefoxdriver().setup();
     driver = new FirefoxDriver();
     baseUrl = "https://www.google.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -35,6 +39,7 @@ public class Datepicker {
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='»'])[3]/following::span[11]")).click();
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Jul'])[1]/following::span[1]")).click();
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Sa'])[1]/following::td[13]")).click();
+    Thread.sleep(5000);
   }
 
   @AfterClass(alwaysRun = true)

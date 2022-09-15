@@ -3,6 +3,9 @@ package tugas.selenium.formy;
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 import org.testng.annotations.*;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import static org.testng.Assert.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -16,6 +19,7 @@ public class DragAndDrop {
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
+	WebDriverManager.firefoxdriver().setup();
     driver = new FirefoxDriver();
     baseUrl = "https://www.google.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -25,6 +29,7 @@ public class DragAndDrop {
   public void testDragAndDrop() throws Exception {
     driver.get("https://formy-project.herokuapp.com/dragdrop");
     driver.findElement(By.xpath("//img[@alt='Selenium logo']")).click();
+    Thread.sleep(5000);
   }
 
   @AfterClass(alwaysRun = true)
