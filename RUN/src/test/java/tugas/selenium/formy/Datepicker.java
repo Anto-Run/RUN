@@ -1,6 +1,5 @@
 package tugas.selenium.formy;
 
-
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 import org.testng.annotations.*;
@@ -9,7 +8,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 import static org.testng.Assert.*;
 import org.openqa.selenium.*;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class Datepicker {
@@ -20,26 +19,25 @@ public class Datepicker {
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
-	WebDriverManager.firefoxdriver().setup();
-    driver = new FirefoxDriver();
+	WebDriverManager.chromedriver().setup();
+    driver = new ChromeDriver();
     baseUrl = "https://www.google.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
 
   @Test
   public void testDatepicker() throws Exception {
-    driver.get("https://formy-project.herokuapp.com/datepicker");
+    driver.get("https://formy-project.herokuapp.com/");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Checkbox'])[2]/following::a[1]")).click();
     driver.findElement(By.id("datepicker")).click();
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Datepicker'])[2]/following::th[2]")).click();
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Datepicker'])[2]/following::th[2]")).click();
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='«'])[1]/following::th[1]")).click();
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='«'])[2]/following::th[1]")).click();
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='«'])[3]/following::th[1]")).click();
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='»'])[4]/following::span[1]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Clear'])[2]/following::th[2]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Clear'])[2]/following::th[2]")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Clear'])[2]/following::th[2]")).click();
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='»'])[3]/following::span[11]")).click();
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Jul'])[1]/following::span[1]")).click();
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Sa'])[1]/following::td[13]")).click();
-    Thread.sleep(5000);
   }
 
   @AfterClass(alwaysRun = true)

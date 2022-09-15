@@ -12,7 +12,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class DragAndDrop {
+public class RadioButton {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
@@ -27,10 +27,13 @@ public class DragAndDrop {
   }
 
   @Test
-  public void testDragAndDrop() throws Exception {
+  public void testRadioButton() throws Exception {
     driver.get("https://formy-project.herokuapp.com/");
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Datepicker'])[2]/following::a[1]")).click();
-    driver.findElement(By.xpath("//img[@alt='Selenium logo']")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Page Scroll'])[2]/following::a[1]")).click();
+    driver.findElement(By.xpath("//div[2]/input")).click();
+    driver.findElement(By.xpath("//div[3]/input")).click();
+    driver.findElement(By.id("radio-button-1")).click();
+    Thread.sleep(1000);
   }
 
   @AfterClass(alwaysRun = true)

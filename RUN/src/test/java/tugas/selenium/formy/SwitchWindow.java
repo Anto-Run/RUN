@@ -12,7 +12,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class DragAndDrop {
+public class SwitchWindow {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
@@ -27,10 +27,15 @@ public class DragAndDrop {
   }
 
   @Test
-  public void testDragAndDrop() throws Exception {
+  public void testSwitchWindow() throws Exception {
     driver.get("https://formy-project.herokuapp.com/");
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Datepicker'])[2]/following::a[1]")).click();
-    driver.findElement(By.xpath("//img[@alt='Selenium logo']")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Radio Button'])[2]/following::a[1]")).click();
+    driver.findElement(By.id("new-tab-button")).click();
+    // ERROR: Caught exception [ERROR: Unsupported command [selectWindow | win_ser_1 | ]]
+    driver.findElement(By.id("navbarDropdownMenuLink")).click();
+    driver.findElement(By.linkText("Switch Window")).click();
+    driver.findElement(By.id("alert-button")).click();
+    assertEquals(closeAlertAndGetItsText(), "This is a test alert!");
   }
 
   @AfterClass(alwaysRun = true)

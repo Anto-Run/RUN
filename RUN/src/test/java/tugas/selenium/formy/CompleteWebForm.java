@@ -1,6 +1,7 @@
 package tugas.selenium.formy;
 
 
+
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 import org.testng.annotations.*;
@@ -12,7 +13,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class DragAndDrop {
+public class CompleteWebForm {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
@@ -27,10 +28,26 @@ public class DragAndDrop {
   }
 
   @Test
-  public void testDragAndDrop() throws Exception {
+  public void testCompleteWebForm() throws Exception {
     driver.get("https://formy-project.herokuapp.com/");
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Datepicker'])[2]/following::a[1]")).click();
-    driver.findElement(By.xpath("//img[@alt='Selenium logo']")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Switch Window'])[2]/following::a[1]")).click();
+    driver.findElement(By.id("first-name")).click();
+    driver.findElement(By.id("first-name")).clear();
+    driver.findElement(By.id("first-name")).sendKeys("Runanto");
+    driver.findElement(By.id("last-name")).click();
+    driver.findElement(By.id("last-name")).clear();
+    driver.findElement(By.id("last-name")).sendKeys("Darmawan");
+    driver.findElement(By.id("job-title")).click();
+    driver.findElement(By.id("job-title")).clear();
+    driver.findElement(By.id("job-title")).sendKeys("QA Enginer");
+    driver.findElement(By.id("radio-button-2")).click();
+    driver.findElement(By.id("checkbox-1")).click();
+    driver.findElement(By.id("select-menu")).click();
+    new Select(driver.findElement(By.id("select-menu"))).selectByVisibleText("10+");
+    driver.findElement(By.xpath("//option[@value='4']")).click();
+    driver.findElement(By.id("datepicker")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Sa'])[1]/following::td[20]")).click();
+    driver.findElement(By.linkText("Submit")).click();
   }
 
   @AfterClass(alwaysRun = true)

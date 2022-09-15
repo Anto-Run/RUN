@@ -14,7 +14,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 import static org.testng.Assert.*;
 import org.openqa.selenium.*;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class FileUpload {
@@ -25,8 +25,8 @@ public class FileUpload {
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
-    WebDriverManager.firefoxdriver().setup();
-	driver = new FirefoxDriver();
+    WebDriverManager.chromedriver().setup();
+	driver = new ChromeDriver();
     baseUrl = "https://www.google.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
@@ -37,20 +37,16 @@ public class FileUpload {
 	  Robot robot = new Robot();
     driver.get("https://formy-project.herokuapp.com/fileupload");
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='File upload'])[1]/following::button[1]")).click();
-//    driver.findElement(By.xpath("//input[@type='file']")).clear();
-    driver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\Users\\NEXSOFT\\Downloads\\Tugas-Final-OOP_Aditya_Runanto.docx");
-//    System.out.println("File is Uploaded Successfully");
-//    Thread.sleep(3000);
-    robot.setAutoDelay(2000);
-    
+
+    Thread.sleep(1000);  
     StringSelection selection = new StringSelection("C:\\Users\\NEXSOFT\\Downloads\\Tugas-Final-OOP_Aditya_Runanto.docx");
     Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection,null);
-//
+    
     robot.setAutoDelay(1000);
 
     robot.keyPress(KeyEvent.VK_CONTROL);
     robot.keyPress(KeyEvent.VK_V);
-
+    
     robot.keyRelease(KeyEvent.VK_CONTROL);
     robot.keyRelease(KeyEvent.VK_V);
 
@@ -58,25 +54,9 @@ public class FileUpload {
 
     robot.keyPress(KeyEvent.VK_ENTER);
     robot.keyRelease(KeyEvent.VK_ENTER);
-    driver.findElement(By.xpath("//input[@type='file']")).clear();
     
-    Thread.sleep(5000);
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Choose'])[1]/following::button[1]")).click();
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='File upload'])[1]/following::button[1]")).click();
-    driver.findElement(By.xpath("//input[@type='file']")).clear();
-    driver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\fakepath\\ANDHIKA_BAGASKARA_PUTRA_NUSANTARA-DOKUMENTASI_JMETER.docx");
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Choose'])[1]/following::button[1]")).click();
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='File upload'])[1]/following::button[1]")).click();
-    driver.findElement(By.xpath("//input[@type='file']")).clear();
-    driver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\fakepath\\apache-jmeter-5.5 (1).zip");
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Choose'])[1]/following::button[1]")).click();
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='File upload'])[1]/following::button[1]")).click();
-    driver.findElement(By.xpath("//input[@type='file']")).clear();
-    driver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\fakepath\\ANDHIKA_BAGASKARA_PUTRA_NUSANTARA-Template-Asynchronous.xlsx");
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Choose'])[1]/following::button[1]")).click();
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='File upload'])[1]/following::button[1]")).click();
-    driver.findElement(By.xpath("//input[@type='file']")).clear();
-    driver.findElement(By.xpath("//input[@type='file']")).sendKeys("C:\\fakepath\\latihan_db.pdf");
+    driver.findElement(By.xpath("//button[normalize-space()='Reset']")).click();
+    robot.setAutoDelay(3000);
   }
 
   @AfterClass(alwaysRun = true)

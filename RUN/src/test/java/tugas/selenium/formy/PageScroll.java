@@ -1,6 +1,5 @@
 package tugas.selenium.formy;
 
-
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 import org.testng.annotations.*;
@@ -12,7 +11,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class DragAndDrop {
+public class PageScroll {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
@@ -20,17 +19,24 @@ public class DragAndDrop {
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
-	WebDriverManager.chromedriver().setup();
-    driver = new ChromeDriver();
+    WebDriverManager.chromedriver().setup();
+	driver = new ChromeDriver();
     baseUrl = "https://www.google.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
 
   @Test
-  public void testDragAndDrop() throws Exception {
+  public void testPageScroll() throws Exception {
     driver.get("https://formy-project.herokuapp.com/");
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Datepicker'])[2]/following::a[1]")).click();
-    driver.findElement(By.xpath("//img[@alt='Selenium logo']")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Modal'])[2]/following::a[1]")).click();
+    driver.findElement(By.id("name")).click();
+    driver.findElement(By.id("name")).clear();
+    driver.findElement(By.id("name")).sendKeys("Runanto");
+    driver.findElement(By.id("date")).click();
+    driver.findElement(By.id("date")).click();
+    driver.findElement(By.id("date")).clear();
+    driver.findElement(By.id("date")).sendKeys("23-11-2022");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Full Name'])[1]/following::div[1]")).click();
   }
 
   @AfterClass(alwaysRun = true)

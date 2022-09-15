@@ -10,7 +10,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import static org.testng.Assert.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class AutoComplete {
@@ -21,25 +20,26 @@ public class AutoComplete {
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
-	WebDriverManager.firefoxdriver().setup();
-	driver = new FirefoxDriver();
+    WebDriverManager.chromedriver().setup();
+	 driver = new ChromeDriver();
     baseUrl = "https://www.google.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
 
   @Test
   public void testAutoComplete() throws Exception {
-    driver.get("https://formy-project.herokuapp.com/autocomplete");
+    driver.get("https://formy-project.herokuapp.com/");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Welcome to Formy'])[1]/following::a[1]")).click();
     driver.findElement(By.id("autocomplete")).click();
     driver.findElement(By.id("autocomplete")).clear();
-    driver.findElement(By.id("autocomplete")).sendKeys("Jalan Kebon Kelapa");
+    driver.findElement(By.id("autocomplete")).sendKeys("Jalan Kebon Pedes");
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Do you own this website?'])[1]/following::button[1]")).click();
     driver.findElement(By.id("street_number")).click();
     driver.findElement(By.id("street_number")).clear();
-    driver.findElement(By.id("street_number")).sendKeys("Jalan Permata 2");
+    driver.findElement(By.id("street_number")).sendKeys("Jalan Permata 1");
     driver.findElement(By.id("route")).click();
     driver.findElement(By.id("route")).clear();
-    driver.findElement(By.id("route")).sendKeys("Jalan Permata 1");
+    driver.findElement(By.id("route")).sendKeys("Jalan Permata 2");
     driver.findElement(By.id("locality")).click();
     driver.findElement(By.id("locality")).clear();
     driver.findElement(By.id("locality")).sendKeys("Tangerang");
@@ -48,16 +48,11 @@ public class AutoComplete {
     driver.findElement(By.id("administrative_area_level_1")).sendKeys("Banten");
     driver.findElement(By.id("postal_code")).click();
     driver.findElement(By.id("postal_code")).clear();
-    driver.findElement(By.id("postal_code")).sendKeys("54321");
-    driver.findElement(By.id("country")).click();
-    driver.findElement(By.id("country")).sendKeys(Keys.DOWN);
+    driver.findElement(By.id("postal_code")).sendKeys("23412");
     driver.findElement(By.id("country")).click();
     driver.findElement(By.id("country")).clear();
     driver.findElement(By.id("country")).sendKeys("Indonesia");
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Autocomplete'])[2]/following::div[1]")).click();
-    driver.findElement(By.xpath("//body")).click();
-    driver.findElement(By.id("country")).click();
-    Thread.sleep(5000);
   }
 
   @AfterClass(alwaysRun = true)

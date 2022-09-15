@@ -3,16 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="latihan.selenium.pagefactoryobject.TestLogin">
+      <class name="tugas.selenium.formy.SwitchWindow">
         <methods>
-          <include name="pageObject"/>
-          <include name="closeBrowser"/>
-          <include name="testInvalidUsernameNull"/>
-          <include name="testInvalidUsernamePasswordNull"/>
+          <include name="testSwitchWindow"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="testInvalidPasswordNull"/>
         </methods>
-      </class> <!-- latihan.selenium.pagefactoryobject.TestLogin -->
+      </class> <!-- tugas.selenium.formy.SwitchWindow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -12,7 +12,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class DragAndDrop {
+public class Modal {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
@@ -20,17 +20,19 @@ public class DragAndDrop {
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
-	WebDriverManager.chromedriver().setup();
-    driver = new ChromeDriver();
+    WebDriverManager.chromedriver().setup();
+	driver = new ChromeDriver();
     baseUrl = "https://www.google.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
 
   @Test
-  public void testDragAndDrop() throws Exception {
+  public void testModal() throws Exception {
     driver.get("https://formy-project.herokuapp.com/");
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Datepicker'])[2]/following::a[1]")).click();
-    driver.findElement(By.xpath("//img[@alt='Selenium logo']")).click();
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Key and Mouse Press'])[2]/following::a[1]")).click();
+    driver.findElement(By.id("modal-button")).click();
+    driver.findElement(By.id("ok-button")).click();
+    driver.findElement(By.id("close-button")).click();
   }
 
   @AfterClass(alwaysRun = true)

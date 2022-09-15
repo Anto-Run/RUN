@@ -8,7 +8,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 import static org.testng.Assert.*;
 import org.openqa.selenium.*;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class Checkboxes {
@@ -19,19 +19,19 @@ public class Checkboxes {
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
-	WebDriverManager.firefoxdriver().setup();
-    driver = new FirefoxDriver();
+	WebDriverManager.chromedriver().setup();
+    driver = new ChromeDriver();
     baseUrl = "https://www.google.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
 
   @Test
   public void testCheckboxes() throws Exception {
-    driver.get("https://formy-project.herokuapp.com/checkbox");
+    driver.get("https://formy-project.herokuapp.com/");
+    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Buttons'])[2]/following::a[1]")).click();
     driver.findElement(By.id("checkbox-1")).click();
     driver.findElement(By.id("checkbox-2")).click();
     driver.findElement(By.id("checkbox-3")).click();
-    Thread.sleep(5000);
   }
 
   @AfterClass(alwaysRun = true)
