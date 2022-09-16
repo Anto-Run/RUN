@@ -3,6 +3,7 @@ package tugas.selenium.formy;
 
 
 import java.util.regex.Pattern;
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 import org.testng.annotations.*;
 
@@ -26,6 +27,8 @@ public class Button {
     driver = new ChromeDriver();
     baseUrl = "https://www.google.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    
+    
   }
 
   @Test

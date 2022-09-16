@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tugas.selenium.formy.SwitchWindow">
+      <class name="tugas.selenium.demoqa.pages.TestPracticeForm">
         <methods>
-          <include name="testSwitchWindow"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="testPracticeForm"/>
+          <include name="closeBrowser"/>
+          <include name="pageObject"/>
         </methods>
-      </class> <!-- tugas.selenium.formy.SwitchWindow -->
+      </class> <!-- tugas.selenium.demoqa.pages.TestPracticeForm -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
