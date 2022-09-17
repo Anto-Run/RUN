@@ -10,8 +10,7 @@ public class Chrome implements DriverStrategy {
 
 	public WebDriver setStrategy() {
 		
-		
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\NEXSOFT\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		ChromeOptions options = new ChromeOptions();
 		options.setExperimentalOption("useAutomationExtension", false);
