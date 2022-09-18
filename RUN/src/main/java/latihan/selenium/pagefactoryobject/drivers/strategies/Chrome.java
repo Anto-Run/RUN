@@ -12,7 +12,6 @@ public class Chrome implements DriverStrategy {
 		
 		
 		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
 		ChromeOptions options = new ChromeOptions();
 		options.setExperimentalOption("useAutomationExtension", false);
 		options.addArguments("--no-sandbox");

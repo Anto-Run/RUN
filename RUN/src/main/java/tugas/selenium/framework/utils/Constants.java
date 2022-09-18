@@ -7,5 +7,5 @@ public class Constants {
 	public static final String URL_ORANEGEHRM = "https://opensource-demo.orangehrmlive.com";
 	public static final String URL_DEMOQA = "https://demoqa.com/";
 	public static final String URL_AMAZONS = "https://katalon-test.s3.amazonaws.com/aut/html/form.html";
-
+	public static final String URL_NOPCOMMERCE = "https://admin-demo.nopcommerce.com";
 }
