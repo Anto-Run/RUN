@@ -25,7 +25,7 @@ public class MenghitungMath {
 				System.out.println("Hasil Math.min(x, y): " + Math.min(doX, doY));
 				System.out.println("Hasil Math.sin(x): "+Math.sin(doX));
 				System.out.println("Hasil Math.cos(y): "+Math.cos(doY));
-			}catch(NumberFormatException e) {
+			}catch(Exception e) {
 				System.out.println("Terjadi Eror : "+ e);
 			}
 			System.out.print("Apakah anda akan menghitung Math lagi? (Y / N) : ");

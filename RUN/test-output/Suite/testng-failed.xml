@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Test Selenium Shop QA(failed)">
     <classes>
-      <class name="ujian.ujianminggukedua.TestGeometry">
+      <class name="ujian.ujiankelima.selenium.TestRegisterPage">
         <methods>
-          <include name="befClass"/>
-          <include name="befMethod"/>
-          <include name="aftClass"/>
-          <include name="aftTest"/>
-          <include name="befTest"/>
-          <include name="testLuasTrapesium"/>
-          <include name="aftMethod"/>
+          <include name="pageObject"/>
+          <include name="testRegistrasiValid"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- ujian.ujianminggukedua.TestGeometry -->
+      </class> <!-- ujian.ujiankelima.selenium.TestRegisterPage -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test Selenium Shop QA(failed) -->
 </suite> <!-- Failed suite [Suite] -->
