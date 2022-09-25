@@ -1,61 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-18T11:06:18 WIB" name="Default suite" finished-at="2022-09-18T11:06:59 WIB" duration-ms="40490">
+  <suite started-at="2022-09-25T10:24:43 WIB" name="Suite" finished-at="2022-09-25T10:26:19 WIB" duration-ms="95569">
     <groups>
     </groups>
-    <test started-at="2022-09-18T11:06:18 WIB" name="Default test" finished-at="2022-09-18T11:06:59 WIB" duration-ms="40490">
-      <class name="ujian.ujiankeempat.nopcommerce.TestLoginPage">
-        <test-method is-config="true" signature="pageObject()[pri:0, instance:ujian.ujiankeempat.nopcommerce.TestLoginPage@2e8c1c9b]" started-at="2022-09-18T11:06:18 WIB" name="pageObject" finished-at="2022-09-18T11:06:24 WIB" duration-ms="5920" status="PASS">
+    <test started-at="2022-09-25T10:24:43 WIB" name="Test Selenium Shop QA" finished-at="2022-09-25T10:26:19 WIB" duration-ms="95569">
+      <class name="ujian.ujiankelima.selenium.TestDeleteWishlist">
+        <test-method is-config="true" signature="pageObject()[pri:0, instance:ujian.ujiankelima.selenium.TestDeleteWishlist@5032714f]" started-at="2022-09-25T10:24:55 WIB" name="pageObject" finished-at="2022-09-25T10:25:01 WIB" duration-ms="6223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageObject -->
-        <test-method signature="testLoginPage()[pri:0, instance:ujian.ujiankeempat.nopcommerce.TestLoginPage@2e8c1c9b]" started-at="2022-09-18T11:06:24 WIB" name="testLoginPage" finished-at="2022-09-18T11:06:28 WIB" duration-ms="4324" status="PASS">
+        <test-method signature="testDeleteWishlistProduct()[pri:0, instance:ujian.ujiankelima.selenium.TestDeleteWishlist@5032714f]" started-at="2022-09-25T10:25:01 WIB" name="testDeleteWishlistProduct" finished-at="2022-09-25T10:25:13 WIB" duration-ms="12144" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginPage -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:ujian.ujiankeempat.nopcommerce.TestLoginPage@2e8c1c9b]" started-at="2022-09-18T11:06:28 WIB" name="closeBrowser" finished-at="2022-09-18T11:06:31 WIB" duration-ms="2151" status="PASS">
+        </test-method> <!-- testDeleteWishlistProduct -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:ujian.ujiankelima.selenium.TestDeleteWishlist@5032714f]" started-at="2022-09-25T10:25:13 WIB" name="closeBrowser" finished-at="2022-09-25T10:25:14 WIB" duration-ms="1191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="pageObject()[pri:0, instance:ujian.ujiankeempat.nopcommerce.TestLoginPage@2e8c1c9b]" started-at="2022-09-18T11:06:31 WIB" name="pageObject" finished-at="2022-09-18T11:06:35 WIB" duration-ms="4000" status="PASS">
+      </class> <!-- ujian.ujiankelima.selenium.TestDeleteWishlist -->
+      <class name="ujian.ujiankelima.selenium.TestSearchPage">
+        <test-method is-config="true" signature="pageObject()[pri:0, instance:ujian.ujiankelima.selenium.TestSearchPage@353352b6]" started-at="2022-09-25T10:25:33 WIB" name="pageObject" finished-at="2022-09-25T10:25:46 WIB" duration-ms="13278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageObject -->
-        <test-method signature="testLoginPageClear()[pri:1, instance:ujian.ujiankeempat.nopcommerce.TestLoginPage@2e8c1c9b]" started-at="2022-09-18T11:06:35 WIB" name="testLoginPageClear" finished-at="2022-09-18T11:06:41 WIB" duration-ms="6405" status="PASS">
+        <test-method signature="testSearchData()[pri:0, instance:ujian.ujiankelima.selenium.TestSearchPage@353352b6]" started-at="2022-09-25T10:25:46 WIB" name="testSearchData" finished-at="2022-09-25T10:25:48 WIB" duration-ms="2479" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginPageClear -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:ujian.ujiankeempat.nopcommerce.TestLoginPage@2e8c1c9b]" started-at="2022-09-18T11:06:41 WIB" name="closeBrowser" finished-at="2022-09-18T11:06:42 WIB" duration-ms="1196" status="PASS">
+        </test-method> <!-- testSearchData -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:ujian.ujiankelima.selenium.TestSearchPage@353352b6]" started-at="2022-09-25T10:25:48 WIB" name="closeBrowser" finished-at="2022-09-25T10:25:50 WIB" duration-ms="1176" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="pageObject()[pri:0, instance:ujian.ujiankeempat.nopcommerce.TestLoginPage@2e8c1c9b]" started-at="2022-09-18T11:06:42 WIB" name="pageObject" finished-at="2022-09-18T11:06:46 WIB" duration-ms="4023" status="PASS">
+      </class> <!-- ujian.ujiankelima.selenium.TestSearchPage -->
+      <class name="ujian.ujiankelima.selenium.TestZoomProduct">
+        <test-method is-config="true" signature="pageObject()[pri:0, instance:ujian.ujiankelima.selenium.TestZoomProduct@3b0fe47a]" started-at="2022-09-25T10:24:43 WIB" name="pageObject" finished-at="2022-09-25T10:24:51 WIB" duration-ms="8400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageObject -->
-        <test-method signature="testLoginPageClearEmailNull()[pri:2, instance:ujian.ujiankeempat.nopcommerce.TestLoginPage@2e8c1c9b]" started-at="2022-09-18T11:06:46 WIB" name="testLoginPageClearEmailNull" finished-at="2022-09-18T11:06:49 WIB" duration-ms="3281" status="PASS">
+        <test-method signature="testZoomProduct()[pri:0, instance:ujian.ujiankelima.selenium.TestZoomProduct@3b0fe47a]" started-at="2022-09-25T10:24:51 WIB" name="testZoomProduct" finished-at="2022-09-25T10:24:53 WIB" duration-ms="2016" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginPageClearEmailNull -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:ujian.ujiankeempat.nopcommerce.TestLoginPage@2e8c1c9b]" started-at="2022-09-18T11:06:49 WIB" name="closeBrowser" finished-at="2022-09-18T11:06:51 WIB" duration-ms="1186" status="PASS">
+        </test-method> <!-- testZoomProduct -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:ujian.ujiankelima.selenium.TestZoomProduct@3b0fe47a]" started-at="2022-09-25T10:24:53 WIB" name="closeBrowser" finished-at="2022-09-25T10:24:55 WIB" duration-ms="1175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="pageObject()[pri:0, instance:ujian.ujiankeempat.nopcommerce.TestLoginPage@2e8c1c9b]" started-at="2022-09-18T11:06:51 WIB" name="pageObject" finished-at="2022-09-18T11:06:54 WIB" duration-ms="3059" status="PASS">
+      </class> <!-- ujian.ujiankelima.selenium.TestZoomProduct -->
+      <class name="ujian.ujiankelima.selenium.TestAddWishlist">
+        <test-method is-config="true" signature="pageObject()[pri:0, instance:ujian.ujiankelima.selenium.TestAddWishlist@48bb62]" started-at="2022-09-25T10:25:14 WIB" name="pageObject" finished-at="2022-09-25T10:25:22 WIB" duration-ms="7607" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageObject -->
-        <test-method signature="testLoginPageClearPasswordNull()[pri:3, instance:ujian.ujiankeempat.nopcommerce.TestLoginPage@2e8c1c9b]" started-at="2022-09-18T11:06:54 WIB" name="testLoginPageClearPasswordNull" finished-at="2022-09-18T11:06:57 WIB" duration-ms="3707" status="PASS">
+        <test-method signature="testAddWishlistProduct()[pri:0, instance:ujian.ujiankelima.selenium.TestAddWishlist@48bb62]" started-at="2022-09-25T10:25:22 WIB" name="testAddWishlistProduct" finished-at="2022-09-25T10:25:31 WIB" duration-ms="9570" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginPageClearPasswordNull -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:ujian.ujiankeempat.nopcommerce.TestLoginPage@2e8c1c9b]" started-at="2022-09-18T11:06:57 WIB" name="closeBrowser" finished-at="2022-09-18T11:06:59 WIB" duration-ms="1188" status="PASS">
+        </test-method> <!-- testAddWishlistProduct -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:ujian.ujiankelima.selenium.TestAddWishlist@48bb62]" started-at="2022-09-25T10:25:31 WIB" name="closeBrowser" finished-at="2022-09-25T10:25:33 WIB" duration-ms="1243" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- ujian.ujiankeempat.nopcommerce.TestLoginPage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- ujian.ujiankelima.selenium.TestAddWishlist -->
+      <class name="ujian.ujiankelima.selenium.TestRegisterPage">
+        <test-method is-config="true" signature="pageObject()[pri:0, instance:ujian.ujiankelima.selenium.TestRegisterPage@4681c175]" started-at="2022-09-25T10:25:50 WIB" name="pageObject" finished-at="2022-09-25T10:25:56 WIB" duration-ms="6232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageObject -->
+        <test-method signature="testRegistrasiValid()[pri:0, instance:ujian.ujiankelima.selenium.TestRegisterPage@4681c175]" started-at="2022-09-25T10:25:56 WIB" name="testRegistrasiValid" finished-at="2022-09-25T10:26:17 WIB" duration-ms="21577" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[@class='login message']"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LAPTOP-ASKQ9BMM', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [039491027027bec2a55955682e00c60d, findElement {using=xpath, value=//p[@class='login message']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62161}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62161/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 039491027027bec2a55955682e00c60d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[@class='login message']"}
+  (Session info: chrome=105.0.5195.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'LAPTOP-ASKQ9BMM', ip: '192.168.0.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [039491027027bec2a55955682e00c60d, findElement {using=xpath, value=//p[@class='login message']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\NEXSOFT\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62161}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62161/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 039491027027bec2a55955682e00c60d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy16.getText(Unknown Source)
+at ujian.ujiankelima.selenium.page.RegisterPage.getTxtRegisterValid(RegisterPage.java:70)
+at ujian.ujiankelima.selenium.TestRegisterPage.testRegistrasiValid(TestRegisterPage.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistrasiValid -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:ujian.ujiankelima.selenium.TestRegisterPage@4681c175]" started-at="2022-09-25T10:26:17 WIB" name="closeBrowser" finished-at="2022-09-25T10:26:19 WIB" duration-ms="1198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- ujian.ujiankelima.selenium.TestRegisterPage -->
+    </test> <!-- Test Selenium Shop QA -->
+  </suite> <!-- Suite -->
 </testng-results>

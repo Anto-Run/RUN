@@ -72,6 +72,8 @@ public class LoginPage {
 		
 		return txtPasswordError.getText();
 	}
+	
+	
 
 
 }

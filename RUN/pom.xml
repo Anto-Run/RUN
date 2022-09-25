@@ -89,6 +89,15 @@
     <version>2.11.0</version>
 </dependency>
 
+
+<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+<dependency>
+    <groupId>io.appium</groupId>
+    <artifactId>java-client</artifactId>
+    <version>7.6.0</version>
+</dependency>
+
+
    </dependencies>
    
    <properties>

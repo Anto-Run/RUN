@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test Selenium Shop QA">
+    <classes>
+      <class name="ujian.ujiankelima.selenium.TestZoomProduct"/>
+      <class name="ujian.ujiankelima.selenium.TestDeleteWishlist"/>
+      <class name="ujian.ujiankelima.selenium.TestAddWishlist"/>
+      <class name="ujian.ujiankelima.selenium.TestSearchPage"/>
+      <class name="ujian.ujiankelima.selenium.TestRegisterPage"/>
+    </classes>
+  </test> <!-- Test Selenium Shop QA -->
+</suite> <!-- Suite -->

@@ -21,7 +21,7 @@ public class TestLoginPage {
 	public void pageObject() {
 		DriverSingleton.getInstance(Constants.CHROME);
 		driver = DriverSingleton.getDriver();
-		driver.get(Constants.URL_NOPCOMMERCE);
+		driver.get(Constants.URL_NOPC);
 		loginPage = new LoginPage();
 		
 	}
